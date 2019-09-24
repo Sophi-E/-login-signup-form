@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login/Signup</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <p>See what's going on in your college today</p>
+    <div class="container login-container">
+        <div class= 'login-header'>
+                <div>
+                        <h1>Login</h1>
+                        <p>See what's going on in your college today</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-lock"></i> 
+                    </div>
 
-        <form action="">
+        </div>
+        <form action="" class = login>
             <label for="student">Login as</label>
             <input type="text">
 
@@ -21,17 +30,24 @@
             <label for="password">Password</label>
             <input type="password">
 
-            <input type="submit" value="Login">
         </form>
+        <button type="submit"  value="Login"><i class="fas fa-lock"></i> Login</button>
 
         <h4>Forgot Password?</h4>
     </div>
 
 
-    <div class="Signup-container">
-        <h1>Signup</h1>
-        <p>Be a part of your college Community</p>
-
+    <div class="container Signup-container">
+            <div class= 'login-header'>
+                    <div>
+                            <h1>Signup</h1>
+                            <p>Be a part of your college Community</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-lock"></i> 
+                        </div>
+    
+            </div>
         <form action="">
             <label for="student">Signup as</label>
             <input type="text">
