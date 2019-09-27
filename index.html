@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Login/Signup</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-    <div class ='grid'>
-    <div class="container login-container">
-        <div class= 'header login-header'>
-            <div>
-                <h1>Login</h1>
-                <p>See what's going on in your College today</p>
-            </div>
-            <div>
-                <i class="fas fa-lock fa-3x"></i> 
-            </div>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <div class="container login-container">
+        <div class="header login-header">
+          <div>
+            <h1>Login</h1>
+            <p>See what's going on in your College today</p>
+          </div>
+          <div>
+            <i class="fas fa-lock fa-3x"></i>
+          </div>
         </div>
-            <form action="" class = login>
-                <span><i class="fas fa-user"></i></span><label for="student" class="label"> Login as</label>
-                <select name="cars">
-                    <option value="Student">Student</option>
-                    <option value="Teacher">Teacher</option>
-                </select>
-                <span><i class="fas fa-user"></i></span><label for="usn"> USN</label>
-                <input type="text" placeholder="USN">
+        <form action="" class="login">
+          <span><i class="fas fa-user"></i></span
+          ><label for="student" class="label"> Login as</label>
+          <select name="cars">
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+          </select>
+          <span><i class="fas fa-user"></i></span><label for="usn"> USN</label>
+          <input type="text" placeholder="USN" />
 
-                <span><i class="far fa-eye"></i></span><label for="password"> Password</label>
-                <input type="password" placeholder="Password">  
-                <div class=''>
-                    <i class="fas fa-lock"></i> 
-                    <input type="submit"  value="Login" class="login-btn">
-                </div>
-            </form>
-            <hr>
-            <h4>Forgot <a href=''>Password?</a></h4>
+          <span><i class="far fa-eye"></i></span
+          ><label for="password"> Password</label>
+          <input type="password" placeholder="Password" />
+          <div class="">
+            <button class="submit login-btn">
+              <i class="fas fa-lock"></i> Login
+            </button>
+          </div>
+        </form>
+        <hr />
+        <h4>Forgot <a href="">Password?</a></h4>
+      </div>
+
+      <div class="container Signup-container">
+        <div class="header signup-header">
+          <div>
+            <h1>Signup</h1>
+            <p>Be a part of your College Community</p>
+          </div>
+          <div>
+            <i class="fas fa-pencil-alt fa-3x"></i>
+          </div>
         </div>
+        <form action="">
+          <span><i class="fas fa-user"></i></span
+          ><label for="student" class="label"> Signup as</label>
+          <select>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+          </select>
 
+          <span><i class="fas fa-user"></i></span><label for="usn"> USN</label>
+          <input type="text" />
 
-        <div class="container Signup-container">
-            <div class= 'header signup-header'>
-                    <div>
-                        <h1>Signup</h1>
-                        <p>Be a part of your College Community</p>
-                    </div>
-                        <div>
-                        <i class="fas fa-pencil-alt fa-3x"></i>
-                    </div>
-                </div>
-            <form action="">
-                <span><i class="fas fa-user"></i></span><label for="student" class="label"> Signup as</label>
-                <select>
-                    <option value="Student">Student</option>
-                    <option value="Teacher">Teacher</option>
-                </select>
-            
+          <span><i class="far fa-eye"></i></span
+          ><label for="password"> Password</label>
+          <input type="password" />
 
-                <span><i class="fas fa-user"></i></span><label for="usn"> USN</label>
-                <input type="text">
+          <span><i class="far fa-eye"></i></span
+          ><label for="password2"> Confirm Password</label>
+          <input type="password" />
 
-                <span><i class="far fa-eye"></i></span><label for="password"> Password</label>
-                <input type="password">
-
-                <span><i class="far fa-eye"></i></span><label for="password2"> Confirm Password</label>
-                <input type="password">
-
-                <div>
-                    <i class="fas fa-pencil-alt"></i>
-                    <input type="submit"  value="Signup" class="signup-btn">
-                </div>
-            </form>
-        </div>
-</body>
+          <button class="submit signup-btn">
+            <i class="fas fa-pencil-alt"></i> Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
